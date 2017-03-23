@@ -1,3 +1,5 @@
+/* Element Styles */
+
 * {
 	box-sizing: border-box;
 	cursor: pointer;
@@ -41,9 +43,7 @@ td {
 	color: #fff;
 }
 
-aside {
-	
-}
+/* ID Styles */
 
 #content {
 	width: 60%;
@@ -71,13 +71,14 @@ aside {
 	font-size: 15px;
 	border-radius: 3px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-
 }
 
 #reset:active {
 	background: #FF61D2;
 	color: #fff;
 }
+
+/* Class Styles */
 
 .game {
 	width: 70%;

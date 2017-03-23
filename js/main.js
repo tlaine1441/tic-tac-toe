@@ -1,10 +1,13 @@
 console.log("im not crazy");
-
+// Select all squares
 var sqrs = document.getElementsByTagName("td");
+// Set default choice to X
 var choice = 'X';
-var gameover = false;
+// Set default to true
 var xActive = true;
+// Set defualt to false
 var oActive = false;
+// Empty moves array to store how many moves have been played
 var moves = [];
 
 // resetBoard function resets game board
@@ -16,7 +19,6 @@ function resetBoard() {
 		sqrs[i].innerHTML = "";	
 		sqrs[i].style.backgroundColor = "#fff";
 	}
-
 	// Reset moves
 	moves = [];
 	// Reset xActive to defualt of true
