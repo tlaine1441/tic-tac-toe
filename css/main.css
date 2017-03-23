@@ -79,6 +79,7 @@ aside {
 	padding: 40px 5px;
 	margin: 5px;
 	display: inline-block;
+	border-radius: 3px;
 }
 
 #x-choice {
