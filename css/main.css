@@ -76,7 +76,8 @@ aside {
 .choice {
 	background: #48fdff;
 	width: 100px;
-	padding: 40px 5px;
+	padding: 35px 5px;
+	font-size: 20px;
 	margin: 5px;
 	display: inline-block;
 	border-radius: 3px;
