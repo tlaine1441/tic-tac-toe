@@ -38,10 +38,37 @@ header {
 td {
 	font-size: 40px;
 	border-radius: 3px;
+	color: #fff;
 }
 
 aside {
 	
+}
+#content {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#x-choice {
+	background: #FF61D2;
+	color: #fff;
+}
+
+#sidebar {
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	float: right;
+}
+
+#reset {
+	padding: 20px;
+	margin: 20px auto;
+	background: #48fdff;
+	color: #333;
+	font-size: 15px;
+
 }
 .float-left-area  {
 	width: 70%;
@@ -72,41 +99,15 @@ aside {
 .clear-floated	  { clear: both; height: 1px; font-size: 1px; line-height: 1px; padding: 0; margin: 0; }
 
 
-#content {
-	width: 60%;
-	margin: 0 auto;
-	text-align: center;
-}
-
 .choice {
-	background: #48fdff;
+	background: #333;
+	color: #fff;
 	width: 100px;
 	padding: 35px 5px;
 	font-size: 20px;
 	margin: 5px;
 	display: inline-block;
 	border-radius: 3px;
-}
-
-#x-choice {
-	background: #333;
-	color: #fff;
-}
-
-#sidebar {
-	height: 100px;
-	width: 100px;
-	display: inline-block;
-	float: right;
-}
-
-#reset {
-	padding: 20px;
-	margin: 20px auto;
-	background: #21B1B2;
-	color: #fff;
-	font-size: 15px;
-
 }
 
 .container {

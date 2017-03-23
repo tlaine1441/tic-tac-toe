@@ -27,10 +27,10 @@ function resetBoard() {
 	choice = "X";
 
 	// Reset choice buttons
-	document.getElementById('x-choice').style.backgroundColor = "#333";
+	document.getElementById('x-choice').style.backgroundColor = "#FF61D2";
 	document.getElementById('x-choice').style.color = "#fff";
-	document.getElementById('o-choice').style.backgroundColor = "#48fdff";
-	document.getElementById('o-choice').style.color = "#333";
+	document.getElementById('o-choice').style.backgroundColor = "#333";
+	document.getElementById('o-choice').style.color = "#fff";
 };
 
 function addChoiceClick() {
@@ -45,12 +45,12 @@ function addChoiceClick() {
 		oActive = false;
 		// If xActive is true set background to #333 and color to #fff
 		if (xActive === true) {
-			this.style.backgroundColor = "#333";
+			this.style.backgroundColor = "#FF61D2";
 			this.style.color = "#fff";
 		} 
 		// Toggle and swap colors with opposing button
-		document.getElementById("o-choice").style.backgroundColor = "#48fdff";
-		document.getElementById("o-choice").style.color = "#333";
+		document.getElementById("o-choice").style.backgroundColor = "#333";
+		document.getElementById("o-choice").style.color = "#fff";
 
 	});
 
@@ -66,12 +66,12 @@ function addChoiceClick() {
 		oActive = true;
 		// If oActive is true set background to #333 and color to #fff
 		if (oActive === true) {
-			this.style.backgroundColor = "#333";
+			this.style.backgroundColor = "#CCB225";
 			this.style.color = "#fff";
 		}
 		// Toggle and swap colors with opposing button
-		document.getElementById("x-choice").style.backgroundColor = "#48fdff";
-		document.getElementById("x-choice").style.color = "#333";
+		document.getElementById("x-choice").style.backgroundColor = "#333";
+		document.getElementById("x-choice").style.color = "#fff";
 	});
 	// Select and Assign event listener to #reset the Reset Button
 	let reset = document.getElementById("reset");
