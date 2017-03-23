@@ -54,6 +54,7 @@ td {
 #x-choice {
 	background: #FF61D2;
 	color: #fff;
+	margin-right: 30px;
 }
 
 #sidebar {
@@ -131,6 +132,7 @@ td {
 .container {
 	background: #fff;
 	display: inline-block;
+	min-width: 558px;
 	margin: 0 auto;
 	padding: 50px;
 	border-radius: 7px;
