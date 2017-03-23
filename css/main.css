@@ -66,11 +66,19 @@ aside {
 #reset {
 	padding: 20px;
 	margin: 20px auto;
-	background: #48fdff;
+	background: rgb(72, 253, 255);
 	color: #333;
 	font-size: 15px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
 }
+
+#reset:active {
+	background: #FF61D2;
+	color: #fff;
+}
+
 .game {
 	width: 70%;
 	float: left;
@@ -116,6 +124,7 @@ aside {
 	margin: 5px;
 	display: inline-block;
 	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .container {
@@ -124,6 +133,7 @@ aside {
 	margin: 0 auto;
 	padding: 50px;
 	border-radius: 7px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .square {
