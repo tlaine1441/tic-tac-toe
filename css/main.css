@@ -19,7 +19,8 @@ h1 {
 	margin-top: 0;
 	font-size: 50px;
 	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 1;
+	letter-spacing: 2px;
+	color: #333;
 }
 
 header {
@@ -29,7 +30,7 @@ header {
 	margin-top: 0;
 	background: #48fdff;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 20px;
 	border-bottom: 1px solid #ddd;
 }
 
@@ -72,7 +73,7 @@ aside {
 }
 
 .choice {
-	background: #ff4040;
+	background: #48fdff;
 	width: 100px;
 	padding: 40px 5px;
 	margin: 5px;
@@ -80,7 +81,8 @@ aside {
 }
 
 #x-choice {
-	background: blue;
+	background: #333;
+	color: #fff;
 }
 
 #sidebar {

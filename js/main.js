@@ -34,9 +34,11 @@ function addClick() {
 		xActive = true;
 		oActive = false;
 		if (xActive === true) {
-			this.style.backgroundColor = "blue";
+			this.style.backgroundColor = "#333";
+			this.style.color = "#fff";
 		} 
-		document.getElementById("o-choice").style.backgroundColor = "#ff4040";
+		document.getElementById("o-choice").style.backgroundColor = "#48fdff";
+		document.getElementById("o-choice").style.color = "#333";
 
 	});
 	document.getElementById("o-choice").addEventListener("click", function() {
@@ -46,9 +48,11 @@ function addClick() {
 		xActive = false;
 		oActive = true;
 		if (oActive === true) {
-			this.style.backgroundColor = "blue";
+			this.style.backgroundColor = "#333";
+			this.style.color = "#fff";
 		}
-		document.getElementById("x-choice").style.backgroundColor = "#ff4040";
+		document.getElementById("x-choice").style.backgroundColor = "#48fdff";
+		document.getElementById("x-choice").style.color = "#333";
 	});
 
 
