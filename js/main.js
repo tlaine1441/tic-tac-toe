@@ -1,11 +1,29 @@
 console.log("im not crazy");
 
-let sqrs = document.getElementsByTagName("td");
-let choice = 'X';
-let gameover = false;
-let xActive = true;
-let oActive = false;
-const moves = [];
+var sqrs = document.getElementsByTagName("td");
+var choice = 'X';
+var gameover = false;
+var xActive = true;
+var oActive = false;
+var moves = [];
+
+function resetBoard() {
+		console.log('reset');
+		for (var i = 0; i < sqrs.length; i++) {
+			sqrs[i].innerHTML = "";	
+			sqrs[i].style.backgroundColor = "#fff";
+		}
+		moves = [];
+		xActive = true;
+		oActive = false;
+		choice = "X";
+
+		document.getElementById('x-choice').style.backgroundColor = "#333";
+		document.getElementById('x-choice').style.color = "#fff";
+		document.getElementById('o-choice').style.backgroundColor = "#48fdff";
+		document.getElementById('o-choice').style.color = "#333";
+
+	};
 
 function addClick() {
 	for (var i = 0; i < sqrs.length; i++) {
@@ -19,8 +37,17 @@ function addClick() {
 			// } else if (this.innerHTML === 'O') {
 			// 	this.innerHTML = "";
 			// }
-			this.innerHTML = choice;
-			moves.push(this.getAttribute('id'));
+
+			if (!this.innerHTML){
+				this.innerHTML = choice;
+				moves.push(this.getAttribute('id'));
+				if (choice === 'X')	{
+					this.style.backgroundColor = "#FF61D2";
+				} else {
+					this.style.backgroundColor = "#CCB225";
+				}
+ 
+			}
 			if (moves.length >= 3){
 				checkMatch();
 			}
@@ -55,7 +82,10 @@ function addClick() {
 		document.getElementById("x-choice").style.color = "#333";
 	});
 
-
+	let reset = document.getElementById("reset");
+	reset.addEventListener('click', function() {
+		resetBoard();
+	});
 
 }
 
@@ -114,6 +144,7 @@ function checkMatch () {
 		alert("O has one");
 	}
 }
+
 
 
 addClick();

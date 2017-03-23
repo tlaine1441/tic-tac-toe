@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -19,7 +20,6 @@ h1 {
 	margin-bottom: 30px;
 	margin-top: 0;
 	font-size: 50px;
-	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 2px;
 	color: #333;
 }
@@ -37,6 +37,7 @@ header {
 
 td {
 	font-size: 40px;
+	border-radius: 3px;
 }
 
 aside {
@@ -62,7 +63,11 @@ aside {
 		  font-size: 11px;
 		  padding: 5px 5px 5px 5px;
 		  min-height: 60px;
+			text-align: left;
 		  }
+.inner-right div {
+	text-align: center;
+}
 
 .clear-floated	  { clear: both; height: 1px; font-size: 1px; line-height: 1px; padding: 0; margin: 0; }
 
@@ -95,7 +100,14 @@ aside {
 	float: right;
 }
 
+#reset {
+	padding: 20px;
+	margin: 20px auto;
+	background: #21B1B2;
+	color: #fff;
+	font-size: 15px;
 
+}
 
 .container {
 	background: #fff;
