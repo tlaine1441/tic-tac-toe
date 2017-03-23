@@ -44,6 +44,7 @@ td {
 aside {
 	
 }
+
 #content {
 	width: 60%;
 	margin: 0 auto;
@@ -70,34 +71,41 @@ aside {
 	font-size: 15px;
 
 }
-.float-left-area  {
+.game {
 	width: 70%;
 	float: left;
 }
 
-.float-right-area {
-		  width: 30%;
-		  float: left;
-		  }
+.sidebar {
+	width: 30%;
+	float: left;
+}
 
-.inner-left	  {
-		  padding: 5px 5px 5px 5px;
-		  margin-right: 10px;
-		  min-height: 60px;
-		  }
+.game-container	{
+	padding: 5px 5px 5px 5px;
+	margin-right: 10px;
+	min-height: 60px;
+}
 
-.inner-right	  {
-		  font-size: 11px;
-		  padding: 5px 5px 5px 5px;
-		  min-height: 60px;
-			text-align: left;
-		  }
-.inner-right div {
+.sidebar-container {
+	font-size: 11px;
+	padding: 5px 5px 5px 5px;
+	min-height: 60px;
+	text-align: left;
+}
+
+.sidebar-container div {
 	text-align: center;
 }
 
-.clear-floated	  { clear: both; height: 1px; font-size: 1px; line-height: 1px; padding: 0; margin: 0; }
-
+.clear-floated { 
+	clear: both; 
+	height: 1px; 
+	font-size: 1px; 
+	line-height: 1px; 
+	padding: 0; 
+	margin: 0; 
+}
 
 .choice {
 	background: #333;
@@ -118,8 +126,7 @@ aside {
 	border-radius: 7px;
 }
 
-
-.square{
+.square {
     width:150px;
     height:150px;
 }
