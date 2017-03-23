@@ -18,7 +18,6 @@ function addClick() {
 		// 	this.innerHTML = "";
 		// }
 		this.innerHTML = choice;
-		checkMatch(i);
 		});
 	}
 	document.getElementById("x-choice").addEventListener("click", function() {
@@ -37,24 +36,47 @@ function addClick() {
 }
 
 function checkMatch () {
+
+
 	if (sqrs[0].innerHTML==="X" && sqrs[1].innerHTML==="X" && sqrs[2].innerHTML==="X") {
 		console.log("x wins");
 		alert("X has one");
 	} else if (sqrs[0].innerHTML==="O" && sqrs[1].innerHTML==="O" && sqrs[2].innerHTML==="O") {
 		console.log("O wins");
+		alert("O has one");
 	} else if (sqrs[3].innerHTML==="X" && sqrs[4].innerHTML==="X" && sqrs[5].innerHTML==="X") {
 		console.log("X wins");
-	} else if (sqrs[3].innerHTML==="O" && sqrs[4].innerHTML==="O" && sqrs[5].innerHTML==="O") {
-		console.log("O wins");
+		alert("X has one");
+    } else if (sqrs[3].innerHTML==="O" && sqrs[4].innerHTML==="O" && sqrs[5].innerHTML==="O") {
+	 	console.log("O wins");
+		alert("O has one");
 	} else if (sqrs[6].innerHTML==="X" && sqrs[7].innerHTML==="X" && sqrs[8].innerHTML==="X") {
 		console.log("X wins");
-	} else if (sqrs[6].innerHTML==="X" && sqrs[7].innerHTML==="X" && sqrs[8].innerHTML==="X") {
-		console.log("X wins");
+		alert("X has one");
+	} else if (sqrs[6].innerHTML==="O" && sqrs[7].innerHTML==="O" && sqrs[8].innerHTML==="O") {
+	 	console.log("O wins");
+		alert("O has one");
+	} else if (sqrs[0].innerHTML==="X" && sqrs[3].innerHTML==="X" && sqrs[6].innerHTML==="X") {
+	 	console.log("X wins");
+		alert("X has one");
+	} else if (sqrs[0].innerHTML==="O" && sqrs[3].innerHTML==="O" && sqrs[6].innerHTML==="O") {
+	 	console.log("O wins");
+		alert("O has one");
+	} else if (sqrs[1].innerHTML==="X" && sqrs[4].innerHTML==="X" && sqrs[7].innerHTML==="X") {
+	 	console.log("X wins");
+		alert("X has one");
+	} else if (sqrs[1].innerHTML==="O" && sqrs[4].innerHTML==="O" && sqrs[7].innerHTML==="O") {
+	 	console.log("O wins");
+		alert("O has one");
+	}  else if (sqrs[2].innerHTML==="X" && sqrs[5].innerHTML==="X" && sqrs[8].innerHTML==="X") {
+	 	console.log("X wins");
+		alert("X has one");
 	}
 }
 
 
 addClick();
+checkMatch();
 // sqrs.addEventListener("click", function() {
 // 	console.log(this);
 // });	
